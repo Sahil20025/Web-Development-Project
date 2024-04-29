@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="stylesheet.css"> <!--Link external style sheet file-->>
+</head>
+<body>
+    <div class="container"> <!--This is main container class which contain all elements (open Main container) -->
+        <div class="apply_box"> <!--Container for job application form (Open Job Container)-->
+            <h1>Job Application <span class="title_small">(Web)</span></h1> 
+            <form action=""> <!-- Form Starting-->
+                <div class="form_container"><!-- form Container for form controls (start)-->
+                    <!--First name input (start)-->
+                    <div class="form_control"> 
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter First Name"/>
+                    </div> 
+                    <!--First name input(Close)-->
+                    <!--Last name input (start)-->
+                    <div class="form_control"> 
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Enter Last Name"/>
+                    </div>
+                    <!--Last name input (Close)-->
+                    <!-- Email input -->
+                    <div class="form_control"> 
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email"/>
+                    </div> 
+                    <!-- End of email input -->
+                    <!-- Job role selection -->
+                    <div class="form_control"> 
+                        <label for="job_role">Job Role</label>
+                        <select id="job_role" name="job_role">
+                            <option value="">Select Job Role</option>
+                            <option value="Front_end"> Front-End Developer</option>
+                            <option value="back_end"> Back-End Developer</option>
+                            <option value="full_stack"> Full Stack Developer</option>
+                            <option value="ui/ux">UX/UI Developer</option>
+                        </select>
+                    </div>
+                    <!-- End of job role selection -->
+                    <!-- Objective textarea -->
+                    <div class="textarea_control"> 
+                        <label for="objective">Objective</label> 
+                        <textarea name="objective" id="objective" cols="50" rows="4" placeholder="Enter Your Objective"></textarea>
+                    </div>
+                    <!-- End of objective textarea -->
+                    <!-- City selection -->
+                    <div class="form_control">
+                        <label for="city_name">City Name</label>
+                        <select id="city_name" name="city_name">
+                            <option value="">Select Job Role</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Noida">Noida</option>
+                        </select>
+                    </div>
+                    <!-- End of city selection -->
+                    <!-- City pincode input -->
+                    <div class="form_control"> <!--11-->
+                        <label for="city_pincode">City Pincode</label>
+                        <input type="number" id="city_pincode" name="city_pincode" placeholder="Enter City Pincode"/>
+                    </div>
+                    <!-- End of city pincode input -->
+                    <!-- Date selection -->
+                    <div class="form_control">
+                        <label for="date">Date</label>
+                    <input type="date" value="today" id="date" name="date"/>
+                    </div>
+                    <!-- End of date selection -->
+                    <!-- CV upload -->
+                    <div class="form_control">
+                        <label for="upload">Upload Your CV</label>
+                        <input type="file" id="upload" name="upload"/>
+                    </div>
+                    <!-- End of CV upload -->
+                </div>
+                <!-- form Container for form controls (End)-->
+                <div class="button_container"><!-- Submit button container -->
+                    <button type="submit">
+                        Apply Now
+                    </button>
+                </div>
+            </form> <!-- Form Closing-->
+        </div><!--Close Job Container-->
+    </div> <!-- Close Main Container-->
+</body>
+</html>

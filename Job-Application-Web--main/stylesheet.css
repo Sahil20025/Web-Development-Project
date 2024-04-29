@@ -1,0 +1,105 @@
+/* Setting background color for the body */
+body {
+    background-color: #ccc;
+}
+
+/* Styling for the main container */
+.container {
+    max-width: 900px;
+    margin: 0 auto; /* Centering the container horizontally */
+}
+
+/* Styling for the job application box */
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 0 auto; /* Centering the box horizontally */
+    margin-top: 50px; /* Adding space from the top */
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1); /* Adding box shadow */
+    border-radius: 10px; /* Adding border radius */
+}
+
+/* Styling for small title */
+.title_small {
+    font-size: 20px;
+}
+
+/* Styling for the form container */
+.form_container {
+    margin: 20px;
+    display: grid; /* Using grid layout for form controls */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Adding gap between grid items */
+}
+
+/* Styling for each form control */
+.form_control {
+    display: flex;
+    flex-direction: column; /* Setting flex direction to column for proper alignment */
+}
+
+/* Styling for labels */
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Styling for inputs, selects, and textareas */
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* Styling for input focus */
+input:focus {
+    outline-color: red;
+}
+
+/* Styling for the button container */
+.button_container {
+    display: flex;
+    justify-content: end; /* Aligning buttons to the end */
+    margin-top: 20px;
+}
+
+/* Styling for the button */
+button {
+    background-color: #00ffff;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: red;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in; /* Adding transition effect */
+}
+
+/* Hover styling for the button */
+button:hover {
+    background-color: yellow;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out; /* Adding transition effect */
+    cursor: pointer; /* Changing cursor on hover */
+}
+
+/* Styling for textarea control */
+.textarea_control {
+    grid-column: 1 / span 2; /* Spanning textarea across two columns */
+}
+
+/* Styling for textareas */
+.textarea_control textarea {
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 460px) {
+    .textarea_control {
+        grid-column: 1 / span 2; /* Spanning textarea across two columns */
+    }
+}
